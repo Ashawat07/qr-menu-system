@@ -1,0 +1,16 @@
+[
+  { "name": "Veg Lahori", "price": 289 },
+  { "name": "Veg Marathi", "price": 289 },
+  { "name": "Veg Kolhapuri", "price": 289 },
+  { "name": "Veg Angara", "price": 289 },
+  { "name": "Veg Patiala", "price": 289 },
+  { "name": "Veg Jalfrezi", "price": 289 },
+  { "name": "Veg Hyderabadi", "price": 289 },
+  { "name": "Navratan Kurma", "price": 299 },
+  { "name": "Veg Kofta Curry", "price": 299 },
+  { "name": "Veg Kadai", "price": 299 },
+  { "name": "Veg Handi", "price": 299 },
+  { "name": "Veg Tawa Special", "price": 299 },
+  { "name": "Green Peas Masala", "price": 289 },
+  { "name": "Mixed Veg Masala", "price": 289 }
+]

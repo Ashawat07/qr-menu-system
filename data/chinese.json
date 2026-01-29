@@ -1,0 +1,10 @@
+[
+  { "name": "Veg Spring Roll", "price": 279 },
+  { "name": "Honey Chilli Potato", "price": 269 },
+  { "name": "Paneer Hot Garlic", "price": 299 },
+  { "name": "Paneer Butter Hot Garlic", "price": 299 },
+  { "name": "Mushroom Chilli Dry", "price": 289 },
+  { "name": "Mushroom Manchurian Dry", "price": 289 },
+  { "name": "Veg Lollipop", "price": 269 },
+  { "name": "Crispy Corn", "price": 249 }
+]

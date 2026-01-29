@@ -1,0 +1,10 @@
+[
+  { "name": "Veg Makhanwala", "price": 309 },
+  { "name": "Veg Jaipuri", "price": 309 },
+  { "name": "Veg Shahi Korma", "price": 319 },
+  { "name": "Malai Kofta Curry", "price": 329 },
+  { "name": "Nargis Kofta Curry", "price": 329 },
+  { "name": "Kaju Masala", "price": 339 },
+  { "name": "Kaju Curry", "price": 339 },
+  { "name": "Pranam Special Veg", "price": 349 }
+]

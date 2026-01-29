@@ -1,0 +1,8 @@
+[
+  { "name": "French Fries", "price": 149 },
+  { "name": "Potato Pakoda", "price": 149 },
+  { "name": "Mix Pakoda", "price": 159 },
+  { "name": "Paneer Pakoda", "price": 189 },
+  { "name": "Puri Bhaji", "price": 159 },
+  { "name": "One Plate Puri", "price": 99 }
+]

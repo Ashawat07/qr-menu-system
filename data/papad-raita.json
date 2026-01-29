@@ -1,0 +1,9 @@
+[
+  { "name": "Masala Papad", "price": 79 },
+  { "name": "Fry Papad", "price": 29 },
+  { "name": "Roasted Papad", "price": 25 },
+  { "name": "Boondi Raita", "price": 99 },
+  { "name": "Veg Raita", "price": 99 },
+  { "name": "Pineapple Raita", "price": 119 },
+  { "name": "Green Salad", "price": 99 }
+]

@@ -1,0 +1,10 @@
+[
+  { "name": "Royal Falooda", "price": 199 },
+  { "name": "Kesar Falooda", "price": 189 },
+  { "name": "Dry Fruit Falooda", "price": 219 },
+  { "name": "Cold Coffee", "price": 149 },
+  { "name": "Mixed Fruit Milkshake", "price": 159 },
+  { "name": "Vanilla Milkshake", "price": 149 },
+  { "name": "Strawberry Milkshake", "price": 149 },
+  { "name": "Mango Milkshake", "price": 159 }
+]

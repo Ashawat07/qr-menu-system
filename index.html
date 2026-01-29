@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<section class="hero">
+  <h1>Pranam Pure Veg</h1>
+  <p>Pure Veg • Jain Friendly</p>
+</section>
+
+<!-- SEARCH BAR -->
+<div class="search-box">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search dishes..."
+  />
+</div>
+
+<section id="categories" class="menu"></section>
+
+<div class="cart" id="cart">
+  🛒 <span id="count">0</span> Items
+</div>
+<!-- CART MODAL -->
+<div id="cartModal" class="cart-modal">
+  <div class="cart-box">
+    <h2>Your Order</h2>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-total">
+      Total: ₹<span id="totalPrice">0</span>
+    </div>
+
+    <div class="cart-actions">
+      <button onclick="closeCart()">Close</button>
+      
+    </div>
+  </div>
+</div>
+
+<script src="categories.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

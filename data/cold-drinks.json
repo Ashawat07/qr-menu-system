@@ -1,0 +1,5 @@
+[
+  { "name": "Mineral Water", "price": 20 },
+  { "name": "Cold Drink (200 ml)", "price": 30 },
+  { "name": "Cold Drink (500 ml)", "price": 60 }
+]

@@ -1,0 +1,11 @@
+[
+  { "name": "Bread Butter Sandwich", "price": 89 },
+  { "name": "Bread Toast Sandwich", "price": 99 },
+  { "name": "Veg Sandwich", "price": 119 },
+  { "name": "Cheese Sandwich", "price": 139 },
+  { "name": "Cheese Toast Sandwich", "price": 149 },
+  { "name": "Veg Cheese Sandwich", "price": 159 },
+  { "name": "Cheese Chilli Toast", "price": 169 },
+  { "name": "Veg Cheese Grill Sandwich", "price": 179 },
+  { "name": "Pranam Club Sandwich", "price": 219 }
+]

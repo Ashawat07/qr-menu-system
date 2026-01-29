@@ -1,0 +1,19 @@
+[
+  { "name": "Butter Milk", "price": 69 },
+  { "name": "Fresh Lime Water", "price": 49 },
+  { "name": "Fresh Lime Soda", "price": 79 },
+  { "name": "Sweet Lassi", "price": 149 },
+  { "name": "Mango Lassi", "price": 159 },
+  { "name": "Cold Drink", "price": 39 },
+  { "name": "Paneer Chilli Dry", "price": 299 },
+  { "name": "Crispy Veg", "price": 299 },
+  { "name": "Honey Chilli Paneer Dry", "price": 299 },
+  { "name": "Veg Manchurian Dry", "price": 269 },
+  { "name": "Paneer Malai Tikka", "price": 299 },
+  { "name": "Malai Soya Chaap", "price": 299 },
+  { "name": "Harabhara Kebab", "price": 299 },
+  { "name": "Paneer Tikka Dry", "price": 299 },
+  { "name": "Paneer Achari Tikka", "price": 299 },
+  { "name": "Banjara Kebab", "price": 299 },
+  { "name": "Paneer Cheese Dhaniya Tikka", "price": 299 }
+]
