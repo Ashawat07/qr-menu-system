@@ -11,11 +11,25 @@ const totalPriceEl = document.getElementById("totalPrice");
 
 const searchInput = document.getElementById("searchInput");
 
+/* ITEM DETAIL MODAL */
+const itemModal = document.getElementById("itemModal");
+const itemImg = document.getElementById("itemImg");
+const itemNameEl = document.getElementById("itemName");
+const itemIngredientsEl = document.getElementById("itemIngredients");
+const itemServesEl = document.getElementById("itemServes");
+const itemPriceEl = document.getElementById("itemPrice");
+const modalQtyEl = document.getElementById("modalQty");
+const addToCartBtn = document.getElementById("addToCartBtn");
+
 /* ===============================
-   CART DATA
+   STATE
 ================================ */
-let cart = {};
+let cart = {}; // { name: { qty, price } }
 let totalCount = 0;
+
+let currentItem = null;
+let modalQty = 1;
+let searchLoaded = false;
 
 /* ===============================
    RENDER CATEGORIES
@@ -23,7 +37,7 @@ let totalCount = 0;
 categories.forEach(cat => {
   const section = document.createElement("div");
   section.className = "category";
-  section.setAttribute("data-cat", cat.id); // 🔥 IMPORTANT
+  section.setAttribute("data-cat", cat.id);
 
   section.innerHTML = `
     <div class="category-card">
@@ -38,8 +52,7 @@ categories.forEach(cat => {
 
   let loaded = false;
 
-  card.addEventListener("click", async () => {
-
+  card.onclick = async () => {
     if (!loaded) {
       await loadCategoryItems(cat, itemsBox);
       loaded = true;
@@ -52,7 +65,7 @@ categories.forEach(cat => {
       closeAll();
       itemsBox.style.maxHeight = itemsBox.scrollHeight + "px";
     }
-  });
+  };
 
   menu.appendChild(section);
 });
@@ -72,25 +85,10 @@ async function loadCategoryItems(cat, itemsBox) {
     div.innerHTML = `
       <span class="item-name">${item.name}</span>
       <span class="item-price">₹${item.price}</span>
-
-      <div class="qty-control">
-        <button class="minus">−</button>
-        <span class="qty">0</span>
-        <button class="plus">+</button>
-      </div>
     `;
 
-    const qtyEl = div.querySelector(".qty");
-
-    div.querySelector(".plus").onclick = (e) => {
-      e.stopPropagation();
-      updateItem(item.name, item.price, 1, qtyEl);
-    };
-
-    div.querySelector(".minus").onclick = (e) => {
-      e.stopPropagation();
-      updateItem(item.name, item.price, -1, qtyEl);
-    };
+    /* ITEM CLICK → OPEN MODAL */
+    div.onclick = () => openItemModal(item);
 
     itemsBox.appendChild(div);
   });
@@ -100,61 +98,82 @@ async function loadCategoryItems(cat, itemsBox) {
    CLOSE ALL CATEGORIES
 ================================ */
 function closeAll() {
-  document.querySelectorAll(".items").forEach(box => {
-    box.style.maxHeight = null;
-  });
+  document.querySelectorAll(".items").forEach(b => b.style.maxHeight = null);
 }
 
 /* ===============================
-   UPDATE ITEM QTY
+   ITEM DETAIL MODAL
 ================================ */
-function updateItem(name, price, change, qtyEl) {
+function openItemModal(item) {
+  currentItem = item;
+  modalQty = 1;
 
+  itemImg.src = item.image;
+  itemNameEl.innerText = item.name;
+  itemIngredientsEl.innerText = item.ingredients;
+  itemServesEl.innerText = "Serves: " + item.serves;
+  itemPriceEl.innerText = item.price;
+  modalQtyEl.innerText = modalQty;
+
+  itemModal.style.display = "flex";
+}
+
+function closeItemModal() {
+  itemModal.style.display = "none";
+}
+
+/* MODAL QTY */
+document.getElementById("modalPlus").onclick = () => {
+  modalQty++;
+  modalQtyEl.innerText = modalQty;
+};
+
+document.getElementById("modalMinus").onclick = () => {
+  if (modalQty > 1) {
+    modalQty--;
+    modalQtyEl.innerText = modalQty;
+  }
+};
+
+/* ADD TO CART FROM MODAL */
+addToCartBtn.onclick = () => {
+  addToCart(currentItem.name, currentItem.price, modalQty);
+  closeItemModal();
+};
+
+/* ===============================
+   CART LOGIC
+================================ */
+function addToCart(name, price, qty) {
   if (!cart[name]) {
-    if (change < 0) return;
     cart[name] = { qty: 0, price };
   }
-
-  cart[name].qty += change;
-
-  if (cart[name].qty <= 0) {
-    delete cart[name];
-    qtyEl.innerText = 0;
-  } else {
-    qtyEl.innerText = cart[name].qty;
-  }
-
-  totalCount += change;
-  if (totalCount < 0) totalCount = 0;
+  cart[name].qty += qty;
+  totalCount += qty;
 
   countEl.innerText = totalCount;
-  cartBar.style.bottom = totalCount > 0 ? "0" : "-80px";
+  cartBar.style.bottom = "0";
 }
 
-/* ===============================
-   CART BAR CLICK
-================================ */
 cartBar.onclick = () => openCart();
 
-/* ===============================
-   OPEN CART MODAL
-================================ */
+/* CART MODAL */
 function openCart() {
   cartItemsBox.innerHTML = "";
   let total = 0;
 
-  for (let item in cart) {
+  for (let name in cart) {
+    total += cart[name].qty * cart[name].price;
+
     const row = document.createElement("div");
     row.className = "cart-row";
 
-    total += cart[item].qty * cart[item].price;
-
     row.innerHTML = `
-      <span>${item}</span>
+      <span>${name}</span>
       <div class="qty-control">
-        <button onclick="cartChange('${item}', -1)">−</button>
-        <span>${cart[item].qty}</span>
-        <button onclick="cartChange('${item}', 1)">+</button>
+        <button onclick="cartChange('${name}', -1)">−</button>
+        <span>${cart[name].qty}</span>
+        <button onclick="cartChange('${name}', 1)">+</button>
       </div>
     `;
 
@@ -165,17 +184,11 @@ function openCart() {
   cartModal.style.display = "flex";
 }
 
-/* ===============================
-   CART QTY CHANGE
-================================ */
-function cartChange(item, change) {
-  cart[item].qty += change;
+function cartChange(name, change) {
+  cart[name].qty += change;
   totalCount += change;
 
-  if (cart[item].qty <= 0) {
-    delete cart[item];
-  }
-
+  if (cart[name].qty <= 0) delete cart[name];
   if (totalCount < 0) totalCount = 0;
 
   countEl.innerText = totalCount;
@@ -188,20 +201,15 @@ function cartChange(item, change) {
   }
 }
 
-/* ===============================
-   CLOSE CART
-================================ */
 function closeCart() {
   cartModal.style.display = "none";
 }
 
 /* ===============================
-   SEARCH – AUTO LOAD ALL CATEGORIES
+   SEARCH (AUTO LOAD ALL)
 ================================ */
-let searchLoaded = false;
-
-searchInput.addEventListener("keyup", async function () {
-  const value = this.value.toLowerCase().trim();
+searchInput.addEventListener("keyup", async () => {
+  const value = searchInput.value.toLowerCase().trim();
 
   if (value && !searchLoaded) {
     await loadAllCategoriesForSearch();
@@ -209,8 +217,10 @@ searchInput.addEventListener("keyup", async function () {
   }
 
   document.querySelectorAll(".item").forEach(item => {
-    const text = item.getAttribute("data-search");
-    item.style.display = text.includes(value) ? "flex" : "none";
+    item.style.display =
+      item.getAttribute("data-search").includes(value)
+        ? "flex"
+        : "none";
   });
 
   document.querySelectorAll(".items").forEach(box => {
@@ -218,22 +228,16 @@ searchInput.addEventListener("keyup", async function () {
   });
 });
 
-/* ===============================
-   LOAD ALL CATEGORIES (SEARCH)
-================================ */
 async function loadAllCategoriesForSearch() {
-  const sections = document.querySelectorAll(".category");
-
-  for (let section of sections) {
+  document.querySelectorAll(".category").forEach(async section => {
     const itemsBox = section.querySelector(".items");
-
-    if (itemsBox.dataset.loaded === "true") continue;
+    if (itemsBox.dataset.loaded === "true") return;
 
     const catId = section.getAttribute("data-cat");
     const cat = categories.find(c => c.id === catId);
-    if (!cat) continue;
+    if (!cat) return;
 
     await loadCategoryItems(cat, itemsBox);
     itemsBox.dataset.loaded = "true";
-  }
+  });
 }

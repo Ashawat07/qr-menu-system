@@ -1,10 +1,16 @@
 [
-  { "name": "Royal Falooda", "price": 199 },
-  { "name": "Kesar Falooda", "price": 189 },
-  { "name": "Dry Fruit Falooda", "price": 219 },
-  { "name": "Cold Coffee", "price": 149 },
-  { "name": "Mixed Fruit Milkshake", "price": 159 },
-  { "name": "Vanilla Milkshake", "price": 149 },
-  { "name": "Strawberry Milkshake", "price": 149 },
-  { "name": "Mango Milkshake", "price": 159 }
+  {
+    "name": "Royal Falooda",
+    "price": 199,
+    "image": "images/items/royal-falooda.jpg",
+    "ingredients": "Falooda sev, milk, ice cream",
+    "serves": "1-2 people"
+  },
+  {
+    "name": "Cold Coffee",
+    "price": 149,
+    "image": "images/items/cold-coffee.jpg",
+    "ingredients": "Milk, coffee, ice cream",
+    "serves": "1 person"
+  }
 ]

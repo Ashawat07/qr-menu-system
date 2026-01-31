@@ -1,6 +1,16 @@
 [
-  { "name": "Fresh Fruit Salad", "price": 149 },
-  { "name": "Fruit Salad with Ice Cream", "price": 179 },
-  { "name": "Caramel Custard", "price": 159 },
-  { "name": "Strawberry Jello Chocolate Mousse", "price": 189 }
+  {
+    "name": "Fruit Salad with Ice Cream",
+    "price": 179,
+    "image": "images/items/fruit-salad.jpg",
+    "ingredients": "Fresh fruits, ice cream",
+    "serves": "1-2 people"
+  },
+  {
+    "name": "Caramel Custard",
+    "price": 159,
+    "image": "images/items/caramel-custard.jpg",
+    "ingredients": "Milk, sugar, caramel",
+    "serves": "1 person"
+  }
 ]

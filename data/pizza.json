@@ -1,9 +1,16 @@
 [
-  { "name": "Margherita Pizza", "price": 299 },
-  { "name": "Veg Deluxe Pizza", "price": 349 },
-  { "name": "Paneer Tikka Pizza", "price": 349 },
-  { "name": "Mexican Pizza", "price": 299 },
-  { "name": "Supreme Veg Pizza", "price": 349 },
-  { "name": "Italian Pizza", "price": 329 },
-  { "name": "Hot & Spicy Pizza", "price": 319 }
+  {
+    "name": "Margherita Pizza",
+    "price": 299,
+    "image": "images/items/margherita-pizza.jpg",
+    "ingredients": "Cheese, tomato sauce",
+    "serves": "2 people"
+  },
+  {
+    "name": "Paneer Tikka Pizza",
+    "price": 349,
+    "image": "images/items/paneer-pizza.jpg",
+    "ingredients": "Paneer, cheese, capsicum",
+    "serves": "2-3 people"
+  }
 ]

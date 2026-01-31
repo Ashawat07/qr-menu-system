@@ -1,8 +1,16 @@
 [
-  { "name": "Blue Lagoon", "price": 149 },
-  { "name": "Sweet Sunrise", "price": 149 },
-  { "name": "Virgin Mojito", "price": 159 },
-  { "name": "Orange Mojito", "price": 159 },
-  { "name": "Pina Colada", "price": 179 },
-  { "name": "Shirley Temple", "price": 149 }
+  {
+    "name": "Virgin Mojito",
+    "price": 159,
+    "image": "images/items/virgin-mojito.jpg",
+    "ingredients": "Mint, lemon, soda",
+    "serves": "1 person"
+  },
+  {
+    "name": "Blue Lagoon",
+    "price": 149,
+    "image": "images/items/blue-lagoon.jpg",
+    "ingredients": "Blue syrup, soda",
+    "serves": "1 person"
+  }
 ]

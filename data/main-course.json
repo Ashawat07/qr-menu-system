@@ -1,16 +1,23 @@
 [
-  { "name": "Veg Lahori", "price": 289 },
-  { "name": "Veg Marathi", "price": 289 },
-  { "name": "Veg Kolhapuri", "price": 289 },
-  { "name": "Veg Angara", "price": 289 },
-  { "name": "Veg Patiala", "price": 289 },
-  { "name": "Veg Jalfrezi", "price": 289 },
-  { "name": "Veg Hyderabadi", "price": 289 },
-  { "name": "Navratan Kurma", "price": 299 },
-  { "name": "Veg Kofta Curry", "price": 299 },
-  { "name": "Veg Kadai", "price": 299 },
-  { "name": "Veg Handi", "price": 299 },
-  { "name": "Veg Tawa Special", "price": 299 },
-  { "name": "Green Peas Masala", "price": 289 },
-  { "name": "Mixed Veg Masala", "price": 289 }
+  {
+    "name": "Veg Kolhapuri",
+    "price": 289,
+    "image": "images/items/veg-kolhapuri.jpg",
+    "ingredients": "Mixed vegetables, kolhapuri masala",
+    "serves": "2-3 people"
+  },
+  {
+    "name": "Veg Handi",
+    "price": 299,
+    "image": "images/items/veg-handi.jpg",
+    "ingredients": "Vegetables, rich gravy",
+    "serves": "2-3 people"
+  },
+  {
+    "name": "Veg Tawa Special",
+    "price": 299,
+    "image": "images/items/veg-tawa.jpg",
+    "ingredients": "Mixed vegetables, tawa masala",
+    "serves": "2-3 people"
+  }
 ]

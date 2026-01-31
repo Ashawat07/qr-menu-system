@@ -1,13 +1,23 @@
 [
-  { "name": "Paneer Chilli Dry", "price": 299 },
-  { "name": "Crispy Veg", "price": 299 },
-  { "name": "Honey Chilli Paneer Dry", "price": 299 },
-  { "name": "Veg Manchurian Dry", "price": 269 },
-  { "name": "Paneer Malai Tikka", "price": 299 },
-  { "name": "Malai Soya Chaap", "price": 299 },
-  { "name": "Harabhara Kebab", "price": 299 },
-  { "name": "Paneer Tikka Dry", "price": 299 },
-  { "name": "Paneer Achari Tikka", "price": 299 },
-  { "name": "Banjara Kebab", "price": 299 },
-  { "name": "Paneer Cheese Dhaniya Tikka", "price": 299 }
+  {
+    "name": "Paneer Chilli Dry",
+    "price": 299,
+    "image": "images/items/paneer-chilli.jpg",
+    "ingredients": "Paneer, capsicum, onion, sauces",
+    "serves": "2 people"
+  },
+  {
+    "name": "Paneer Tikka Dry",
+    "price": 299,
+    "image": "images/items/paneer-tikka.jpg",
+    "ingredients": "Paneer, curd marinade, spices",
+    "serves": "2 people"
+  },
+  {
+    "name": "Harabhara Kebab",
+    "price": 299,
+    "image": "images/items/hara-bhara-kebab.jpg",
+    "ingredients": "Spinach, peas, potato",
+    "serves": "2 people"
+  }
 ]

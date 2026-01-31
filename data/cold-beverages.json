@@ -1,8 +1,16 @@
 [
-  { "name": "Butter Milk", "price": 69 },
-  { "name": "Fresh Lime Water", "price": 49 },
-  { "name": "Fresh Lime Soda", "price": 79 },
-  { "name": "Sweet Lassi", "price": 149 },
-  { "name": "Mango Lassi", "price": 159 },
-  { "name": "Cold Drink", "price": 39 }
+  {
+    "name": "Fresh Lime Soda",
+    "price": 79,
+    "image": "images/items/lime-soda.jpg",
+    "ingredients": "Lemon, soda, sugar/salt",
+    "serves": "1 person"
+  },
+  {
+    "name": "Sweet Lassi",
+    "price": 149,
+    "image": "images/items/sweet-lassi.jpg",
+    "ingredients": "Curd, sugar",
+    "serves": "1 person"
+  }
 ]

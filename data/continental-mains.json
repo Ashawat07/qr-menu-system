@@ -1,11 +1,16 @@
 [
-  { "name": "Cheese Pasta", "price": 249 },
-  { "name": "Italian Pasta", "price": 269 },
-  { "name": "Washington Pasta", "price": 279 },
-  { "name": "Green Angle Pasta", "price": 279 },
-  { "name": "White Sauce Pasta", "price": 269 },
-  { "name": "Red Sauce Pasta", "price": 259 },
-  { "name": "Pink Sauce Pasta", "price": 279 },
-  { "name": "Fusilli Pesto Pasta", "price": 299 },
-  { "name": "Aglio Olio Pasta", "price": 289 }
+  {
+    "name": "White Sauce Pasta",
+    "price": 269,
+    "image": "images/items/white-sauce-pasta.jpg",
+    "ingredients": "Pasta, cream sauce, vegetables",
+    "serves": "1-2 people"
+  },
+  {
+    "name": "Red Sauce Pasta",
+    "price": 259,
+    "image": "images/items/red-sauce-pasta.jpg",
+    "ingredients": "Pasta, tomato sauce",
+    "serves": "1-2 people"
+  }
 ]

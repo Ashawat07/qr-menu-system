@@ -1,9 +1,16 @@
 [
-  { "name": "Masala Papad", "price": 79 },
-  { "name": "Fry Papad", "price": 29 },
-  { "name": "Roasted Papad", "price": 25 },
-  { "name": "Boondi Raita", "price": 99 },
-  { "name": "Veg Raita", "price": 99 },
-  { "name": "Pineapple Raita", "price": 119 },
-  { "name": "Green Salad", "price": 99 }
+  {
+    "name": "Masala Papad",
+    "price": 79,
+    "image": "images/items/masala-papad.jpg",
+    "ingredients": "Papad, onion, tomato, masala",
+    "serves": "1 person"
+  },
+  {
+    "name": "Veg Raita",
+    "price": 99,
+    "image": "images/items/veg-raita.jpg",
+    "ingredients": "Curd, vegetables",
+    "serves": "1 person"
+  }
 ]

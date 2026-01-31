@@ -1,6 +1,23 @@
 [
-  { "name": "Sweet Corn Veg Soup", "price": 150 },
-  { "name": "Cream of Tomato Soup", "price": 150 },
-  { "name": "Hot & Sour Soup", "price": 150 },
-  { "name": "Veg Manchow Soup", "price": 150 }
+  {
+    "name": "Sweet Corn Veg Soup",
+    "price": 150,
+    "image": "images/items/sweet-corn-soup.jpg",
+    "ingredients": "Sweet corn, vegetables, mild spices",
+    "serves": "1 person"
+  },
+  {
+    "name": "Veg Manchow Soup",
+    "price": 150,
+    "image": "images/items/manchow-soup.jpg",
+    "ingredients": "Mixed vegetables, garlic, soy sauce",
+    "serves": "1 person"
+  },
+  {
+    "name": "Hot & Sour Soup",
+    "price": 150,
+    "image": "images/items/hot-sour-soup.jpg",
+    "ingredients": "Vegetables, vinegar, chilli sauce",
+    "serves": "1 person"
+  }
 ]

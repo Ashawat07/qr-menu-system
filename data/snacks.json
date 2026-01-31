@@ -1,8 +1,23 @@
 [
-  { "name": "French Fries", "price": 149 },
-  { "name": "Potato Pakoda", "price": 149 },
-  { "name": "Mix Pakoda", "price": 159 },
-  { "name": "Paneer Pakoda", "price": 189 },
-  { "name": "Puri Bhaji", "price": 159 },
-  { "name": "One Plate Puri", "price": 99 }
+  {
+    "name": "French Fries",
+    "price": 149,
+    "image": "images/items/french-fries.jpg",
+    "ingredients": "Potato, salt",
+    "serves": "1-2 people"
+  },
+  {
+    "name": "Paneer Pakoda",
+    "price": 189,
+    "image": "images/items/paneer-pakoda.jpg",
+    "ingredients": "Paneer, gram flour, spices",
+    "serves": "2 people"
+  },
+  {
+    "name": "Mix Pakoda",
+    "price": 159,
+    "image": "images/items/mix-pakoda.jpg",
+    "ingredients": "Mixed vegetables, gram flour",
+    "serves": "2 people"
+  }
 ]

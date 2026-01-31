@@ -1,8 +1,16 @@
 [
-  { "name": "Vanilla Ice Cream", "price": 129 },
-  { "name": "Strawberry Ice Cream", "price": 129 },
-  { "name": "Chocolate Ice Cream", "price": 129 },
-  { "name": "Butterscotch Ice Cream", "price": 129 },
-  { "name": "Kesar Pista Ice Cream", "price": 149 },
-  { "name": "Gadbad Ice Cream", "price": 199 }
+  {
+    "name": "Vanilla Ice Cream",
+    "price": 129,
+    "image": "images/items/vanilla-icecream.jpg",
+    "ingredients": "Milk, vanilla",
+    "serves": "1 person"
+  },
+  {
+    "name": "Gadbad Ice Cream",
+    "price": 199,
+    "image": "images/items/gadbad-icecream.jpg",
+    "ingredients": "Mixed fruits, ice cream",
+    "serves": "1-2 people"
+  }
 ]

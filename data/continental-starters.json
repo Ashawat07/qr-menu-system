@@ -1,11 +1,16 @@
 [
-  { "name": "Nachos", "price": 219 },
-  { "name": "Nachos Special", "price": 249 },
-  { "name": "Italian Nachos", "price": 269 },
-  { "name": "Cheese Garlic Bread", "price": 199 },
-  { "name": "Bruschetta", "price": 229 },
-  { "name": "Taco", "price": 239 },
-  { "name": "Taco Special", "price": 269 },
-  { "name": "Italian Taco", "price": 289 },
-  { "name": "Taco Salad", "price": 249 }
+  {
+    "name": "Nachos with Cheese",
+    "price": 219,
+    "image": "images/items/nachos.jpg",
+    "ingredients": "Corn chips, cheese sauce",
+    "serves": "2 people"
+  },
+  {
+    "name": "Cheese Garlic Bread",
+    "price": 199,
+    "image": "images/items/garlic-bread.jpg",
+    "ingredients": "Bread, cheese, garlic butter",
+    "serves": "2 people"
+  }
 ]

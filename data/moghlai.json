@@ -1,10 +1,23 @@
 [
-  { "name": "Veg Makhanwala", "price": 309 },
-  { "name": "Veg Jaipuri", "price": 309 },
-  { "name": "Veg Shahi Korma", "price": 319 },
-  { "name": "Malai Kofta Curry", "price": 329 },
-  { "name": "Nargis Kofta Curry", "price": 329 },
-  { "name": "Kaju Masala", "price": 339 },
-  { "name": "Kaju Curry", "price": 339 },
-  { "name": "Pranam Special Veg", "price": 349 }
+  {
+    "name": "Veg Makhanwala",
+    "price": 309,
+    "image": "images/items/veg-makhanwala.jpg",
+    "ingredients": "Vegetables, butter, rich gravy",
+    "serves": "2-3 people"
+  },
+  {
+    "name": "Veg Shahi Korma",
+    "price": 319,
+    "image": "images/items/veg-shahi-korma.jpg",
+    "ingredients": "Vegetables, cashew gravy, cream",
+    "serves": "2-3 people"
+  },
+  {
+    "name": "Kaju Masala",
+    "price": 339,
+    "image": "images/items/kaju-masala.jpg",
+    "ingredients": "Cashew nuts, rich gravy",
+    "serves": "2-3 people"
+  }
 ]

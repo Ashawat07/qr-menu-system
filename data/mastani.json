@@ -1,7 +1,16 @@
 [
-  { "name": "Mango Alphonso Mastani", "price": 199 },
-  { "name": "Royal Special Mastani", "price": 219 },
-  { "name": "Dry Fruit Mastani", "price": 229 },
-  { "name": "Pranam Special Mastani", "price": 239 },
-  { "name": "Sitafal Mastani", "price": 219 }
+  {
+    "name": "Mango Mastani",
+    "price": 199,
+    "image": "images/items/mango-mastani.jpg",
+    "ingredients": "Mango pulp, milk, ice cream",
+    "serves": "1-2 people"
+  },
+  {
+    "name": "Dry Fruit Mastani",
+    "price": 229,
+    "image": "images/items/dry-fruit-mastani.jpg",
+    "ingredients": "Dry fruits, milk, ice cream",
+    "serves": "1-2 people"
+  }
 ]

@@ -1,8 +1,16 @@
 [
-  { "name": "Paneer Satay Sizzler", "price": 399 },
-  { "name": "Paneer Hot Pan Sizzler", "price": 399 },
-  { "name": "Paneer Sizzler", "price": 399 },
-  { "name": "Veg Hot Pan Sizzler", "price": 379 },
-  { "name": "Mexican Pasta Sizzler", "price": 399 },
-  { "name": "Paneer Shashlik Sizzler", "price": 399 }
+  {
+    "name": "Paneer Sizzler",
+    "price": 399,
+    "image": "images/items/paneer-sizzler.jpg",
+    "ingredients": "Paneer, vegetables, sauce",
+    "serves": "2 people"
+  },
+  {
+    "name": "Veg Hot Pan Sizzler",
+    "price": 379,
+    "image": "images/items/veg-sizzler.jpg",
+    "ingredients": "Vegetables, rice, sauce",
+    "serves": "2 people"
+  }
 ]

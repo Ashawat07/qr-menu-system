@@ -1,11 +1,23 @@
 [
-  { "name": "Paneer Butter Masala", "price": 319 },
-  { "name": "Paneer Tikka Masala", "price": 319 },
-  { "name": "Paneer Kolhapuri", "price": 319 },
-  { "name": "Paneer Handi", "price": 319 },
-  { "name": "Paneer Kadai", "price": 319 },
-  { "name": "Paneer Makhanwala", "price": 319 },
-  { "name": "Paneer Peshawari", "price": 319 },
-  { "name": "Paneer Kurchan", "price": 319 },
-  { "name": "Paneer 65 Masala", "price": 319 }
+  {
+    "name": "Paneer Butter Masala",
+    "price": 319,
+    "image": "images/items/paneer-butter-masala.jpg",
+    "ingredients": "Paneer, butter, tomato gravy, cream",
+    "serves": "2-3 people"
+  },
+  {
+    "name": "Paneer Kadai",
+    "price": 319,
+    "image": "images/items/paneer-kadai.jpg",
+    "ingredients": "Paneer, capsicum, onion, spices",
+    "serves": "2-3 people"
+  },
+  {
+    "name": "Paneer Handi",
+    "price": 319,
+    "image": "images/items/paneer-handi.jpg",
+    "ingredients": "Paneer, rich gravy",
+    "serves": "2-3 people"
+  }
 ]

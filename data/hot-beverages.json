@@ -1,6 +1,16 @@
 [
-  { "name": "Tea", "price": 39 },
-  { "name": "Coffee", "price": 49 },
-  { "name": "Nescafe", "price": 59 },
-  { "name": "Hot Chocolate", "price": 99 }
+  {
+    "name": "Tea",
+    "price": 39,
+    "image": "images/items/tea.jpg",
+    "ingredients": "Tea leaves, milk, sugar",
+    "serves": "1 person"
+  },
+  {
+    "name": "Coffee",
+    "price": 49,
+    "image": "images/items/coffee.jpg",
+    "ingredients": "Coffee, milk",
+    "serves": "1 person"
+  }
 ]

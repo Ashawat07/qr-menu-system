@@ -1,6 +1,23 @@
 [
-  { "name": "Veg Manchurian Gravy", "price": 299 },
-  { "name": "Paneer Chilli Gravy", "price": 299 },
-  { "name": "Veg Hot Garlic Sauce", "price": 299 },
-  { "name": "Gobi Manchurian", "price": 299 }
+  {
+    "name": "Veg Manchurian Gravy",
+    "price": 299,
+    "image": "images/items/veg-manchurian-gravy.jpg",
+    "ingredients": "Vegetable balls, manchurian sauce",
+    "serves": "2-3 people"
+  },
+  {
+    "name": "Paneer Chilli Gravy",
+    "price": 299,
+    "image": "images/items/paneer-chilli-gravy.jpg",
+    "ingredients": "Paneer, onion, capsicum, sauces",
+    "serves": "2-3 people"
+  },
+  {
+    "name": "Veg Hot Garlic Sauce",
+    "price": 299,
+    "image": "images/items/hot-garlic-veg.jpg",
+    "ingredients": "Vegetables, garlic, chilli sauce",
+    "serves": "2-3 people"
+  }
 ]

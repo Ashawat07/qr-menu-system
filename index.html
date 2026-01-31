@@ -44,6 +44,32 @@
     </div>
   </div>
 </div>
+<!-- ITEM DETAIL MODAL -->
+<div id="itemModal" class="item-modal">
+  <div class="item-box">
+    <img id="itemImg" src="" alt="Dish Image">
+
+    <h3 id="itemName"></h3>
+
+    <p class="ingredients" id="itemIngredients"></p>
+
+    <p class="serves" id="itemServes"></p>
+
+    <p class="price">₹<span id="itemPrice"></span></p>
+
+    <div class="qty-control">
+      <button id="modalMinus">−</button>
+      <span id="modalQty">1</span>
+      <button id="modalPlus">+</button>
+    </div>
+
+    <button class="add-cart-btn" id="addToCartBtn">
+      Add to Cart
+    </button>
+
+    <button class="close-btn" onclick="closeItemModal()">Close</button>
+  </div>
+</div>
 
 <script src="categories.js"></script>
 <script src="script.js"></script>
