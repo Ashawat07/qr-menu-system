@@ -15,31 +15,116 @@ body {
   line-height: 1.4;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    height: 55vh;
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+}
+
 /* ===============================
    HERO SECTION
 ================================ */
+/* =========================
+   HERO SECTION
+========================= */
+
+/* =========================
+   HERO – PREMIUM VERSION
+========================= */
+
 .hero {
-  height: 45vh;
-  background: linear-gradient(180deg, #2e7d32, #1b5e20);
-  color: #fff;
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  background: url("images/items/hero-bg.webp") center/cover no-repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* STRONG premium overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.35),
+      rgba(0,0,0,0.85)
+    );
+  z-index: 1;
+}
+
+/* CONTENT WRAPPER */
+.hero-inner {
+  position: relative;
+  z-index: 2;
   text-align: center;
-  padding: 20px;
+  padding: 30px 36px;
+  border-radius: 22px;
+
+  /* glass + contrast */
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(4px);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.6);
 }
 
-.hero h1 {
-  font-size: 2.2rem;
-  font-weight: 600;
+/* OPTIONAL LOGO */
+.hero-logo {
+  max-width: 140px;
+  margin-bottom: 18px;
 }
 
-.hero p {
-  margin-top: 8px;
-  opacity: 0.9;
-  font-size: 1rem;
+/* MAIN TITLE */
+.hero-inner h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 12px;
+  color: #ffffff;
+
+  /* HIGH CONTRAST + GOLD GLOW */
+  text-shadow:
+    0 3px 6px rgba(0,0,0,0.95),
+    0 0 25px rgba(212,175,55,0.9),
+    0 0 45px rgba(212,175,55,0.6);
 }
+
+/* SUBTITLE */
+.hero-inner p {
+  font-size: 1.05rem;
+  letter-spacing: 1.5px;
+  color: #f5f5f5;
+
+  text-shadow:
+    0 2px 6px rgba(0,0,0,0.9);
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-inner h1 {
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-inner p {
+    font-size: 0.9rem;
+  }
+}
+
 
 /* ===============================
    MENU WRAPPER
