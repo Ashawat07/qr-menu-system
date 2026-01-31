@@ -1,7 +1,37 @@
 [
-  { "name": "Bombay Pav Bhaji", "price": 159 },
-  { "name": "Jain Pav Bhaji", "price": 179 },
-  { "name": "Masala Pav Bhaji", "price": 179 },
-  { "name": "Cheese Pav Bhaji", "price": 179 },
-  { "name": "Paneer Pav Bhaji", "price": 179 }
+  {
+    "name": "Bombay Pav Bhaji",
+    "price": 159,
+    "image": "images/items/bombay-pav-bhaji.jpg",
+    "ingredients": "Mixed vegetables, tomato, butter, pav bhaji masala, onion",
+    "serves": "1 person"
+  },
+  {
+    "name": "Jain Pav Bhaji",
+    "price": 179,
+    "image": "images/items/jain-pav-bhaji.jpg",
+    "ingredients": "Mixed vegetables, tomato, butter, special Jain masala (no onion, no garlic)",
+    "serves": "1 person"
+  },
+  {
+    "name": "Masala Pav Bhaji",
+    "price": 179,
+    "image": "images/items/masala-pav-bhaji.jpg",
+    "ingredients": "Mixed vegetables, tomato, butter, extra pav bhaji masala",
+    "serves": "1 person"
+  },
+  {
+    "name": "Cheese Pav Bhaji",
+    "price": 179,
+    "image": "images/items/cheese-pav-bhaji.jpg",
+    "ingredients": "Mixed vegetables, tomato, butter, cheese, pav bhaji masala",
+    "serves": "1–2 persons"
+  },
+  {
+    "name": "Paneer Pav Bhaji",
+    "price": 179,
+    "image": "images/items/paneer-pav-bhaji.jpg",
+    "ingredients": "Mixed vegetables, tomato, butter, paneer cubes, pav bhaji masala",
+    "serves": "1–2 persons"
+  }
 ]
