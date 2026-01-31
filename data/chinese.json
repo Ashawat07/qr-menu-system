@@ -2,7 +2,7 @@
   {
     "name": "Veg Spring Roll",
     "price": 279,
-    "image": "images/items/spring-roll.jpg",
+    "image": "/images/items/spring-roll.jpg",
     "ingredients": "Vegetables, wrapper, spices",
     "serves": "2 people"
   },
@@ -16,7 +16,7 @@
   {
     "name": "Crispy Corn",
     "price": 249,
-    "image": "images/items/crispy-corn.jpg",
+    "image": "/images/items/crispy-corn.jpg",
     "ingredients": "Corn, spices",
     "serves": "2 people"
   }
