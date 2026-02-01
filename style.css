@@ -40,7 +40,7 @@ body {
   position: relative;
   height: 70vh;
   width: 100%;
-  background: url("images/items/hero-bg.webp") center/cover no-repeat;
+  background: url("images/items/") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
